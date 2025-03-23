@@ -1,0 +1,122 @@
+[gd_scene load_steps=8 format=3 uid="uid://c5w0ipluj8fdx"]
+
+[ext_resource type="Script" path="res://Cas/GUI/Pause Menu/pause_menu.gd" id="1_grjbd"]
+[ext_resource type="Texture2D" uid="uid://cb3wnhdvth0rh" path="res://Cas/Items/Sprites/items.png" id="2_3033b"]
+[ext_resource type="PackedScene" uid="uid://b603kk4bofn67" path="res://Cas/GUI/Pause Menu/Inventory/inventory_slot.tscn" id="3_8q461"]
+[ext_resource type="Script" path="res://Cas/GUI/Pause Menu/Inventory/Scripts/inventory_ui.gd" id="3_vilf3"]
+[ext_resource type="Resource" uid="uid://ehd0eu8e78vb" path="res://Cas/GUI/Pause Menu/Inventory/player_inventory.tres" id="4_go3cs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjll8"]
+atlas = ExtResource("2_3033b")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e00n8"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+texture = SubResource("AtlasTexture_pjll8")
+texture_margin_left = 14.0
+texture_margin_top = 14.0
+texture_margin_right = 14.0
+texture_margin_bottom = 14.0
+
+[node name="PauseMenu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_grjbd")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.233925, 0.233925, 0.233925, 0.772549)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -619.0
+offset_top = 278.0
+offset_right = -488.0
+offset_bottom = 344.0
+grow_horizontal = 0
+
+[node name="Button_Save" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Save"
+
+[node name="Button_Load" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Load"
+
+[node name="Label" type="Label" parent="Control"]
+modulate = Color(1, 1, 1, 0.784314)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.0
+offset_top = -11.5
+offset_right = 38.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "[ paused ]"
+
+[node name="PanelContainer" type="PanelContainer" parent="Control"]
+layout_mode = 0
+offset_right = 196.0
+offset_bottom = 88.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_e00n8")
+
+[node name="GridContainer" type="GridContainer" parent="Control/PanelContainer"]
+layout_mode = 2
+columns = 5
+script = ExtResource("3_vilf3")
+data = ExtResource("4_go3cs")
+
+[node name="InventorySlot" parent="Control/PanelContainer/GridContainer" instance=ExtResource("3_8q461")]
+layout_mode = 2
+
+[node name="InventorySlot3" parent="Control/PanelContainer/GridContainer" instance=ExtResource("3_8q461")]
+layout_mode = 2
+
+[node name="InventorySlot4" parent="Control/PanelContainer/GridContainer" instance=ExtResource("3_8q461")]
+layout_mode = 2
+
+[node name="InventorySlot5" parent="Control/PanelContainer/GridContainer" instance=ExtResource("3_8q461")]
+layout_mode = 2
+
+[node name="InventorySlot6" parent="Control/PanelContainer/GridContainer" instance=ExtResource("3_8q461")]
+layout_mode = 2
+
+[node name="InventorySlot2" parent="Control/PanelContainer/GridContainer" instance=ExtResource("3_8q461")]
+layout_mode = 2
+
+[node name="ItemDescription" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 17.0
+offset_right = 448.0
+offset_bottom = 40.0
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
+max_polyphony = 4
