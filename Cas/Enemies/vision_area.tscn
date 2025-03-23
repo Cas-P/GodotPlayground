@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://p6hqmhc65g71"]
-
-[ext_resource type="Script" path="res://Cas/Enemies/Scripts/vision_area.gd" id="1_qeiwe"]
-
-[node name="VisionArea" type="Area2D"]
-collision_layer = 0
-monitorable = false
-script = ExtResource("1_qeiwe")

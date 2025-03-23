@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cikxc0v3cktpw"
-path="res://.godot/imported/Shadow.png-30e68cc453bd3dfb3929821f6e4fa4be.ctex"
+uid="uid://b57moe6slp8lu"
+path="res://.godot/imported/spritesheet.png-82e03d436e02bd83454d92e60d081d8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/Sprites/Shadow.png"
-dest_files=["res://.godot/imported/Shadow.png-30e68cc453bd3dfb3929821f6e4fa4be.ctex"]
+source_file="res://Abilities/Dash/spritesheet.png"
+dest_files=["res://.godot/imported/spritesheet.png-82e03d436e02bd83454d92e60d081d8d.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cikxc0v3cktpw"
-path="res://.godot/imported/Shadow.png-30e68cc453bd3dfb3929821f6e4fa4be.ctex"
+uid="uid://bw02g3wpu6nts"
+path="res://.godot/imported/TilesetFloor.png-c0e24f4a0294a243fe696daffeeb9283.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/Sprites/Shadow.png"
-dest_files=["res://.godot/imported/Shadow.png-30e68cc453bd3dfb3929821f6e4fa4be.ctex"]
+source_file="res://Tilesets/Sprites/TilesetFloor.png"
+dest_files=["res://.godot/imported/TilesetFloor.png-c0e24f4a0294a243fe696daffeeb9283.ctex"]
 
 [params]
 

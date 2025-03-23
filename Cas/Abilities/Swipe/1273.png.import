@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cikxc0v3cktpw"
-path="res://.godot/imported/Shadow.png-30e68cc453bd3dfb3929821f6e4fa4be.ctex"
+uid="uid://hw0x37ijbyl2"
+path="res://.godot/imported/1273.png-8ff137dcc1ab602c0633c1ac9bd778cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/Sprites/Shadow.png"
-dest_files=["res://.godot/imported/Shadow.png-30e68cc453bd3dfb3929821f6e4fa4be.ctex"]
+source_file="res://Abilities/Swipe/1273.png"
+dest_files=["res://.godot/imported/1273.png-8ff137dcc1ab602c0633c1ac9bd778cf.ctex"]
 
 [params]
 
